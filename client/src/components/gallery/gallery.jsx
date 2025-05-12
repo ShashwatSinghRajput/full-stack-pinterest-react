@@ -1,5 +1,5 @@
 import './gallery.css'
-import GalleryItem from './galleryItem/galleryItem.jsx'
+import GalleryItem from '../galleryItem/galleryItem.jsx'
 // TEMP
 const items = [
   {
@@ -169,7 +169,7 @@ const items = [
 const Gallery = () => {
     return (
         <div className='gallery'>
-            {items.map(item=>
+            {items.map(item => (
                 <GalleryItem 
                     key={item.id} 
                     media={item.media} 
@@ -178,7 +178,7 @@ const Gallery = () => {
                 />
             ))}
         </div>
-    )
+    );
 }
 
 export default Gallery
